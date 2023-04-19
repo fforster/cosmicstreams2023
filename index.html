@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Add your other head elements here -->
+    <style>
+        body {
+            margin: 0;
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+        }
+
+	.section {
+            scroll-snap-align: start;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+	    font-family: 'Open Sans', sans-serif;
+	    font-size: 14px;
+            text-align: center;
+	    padding: 20px;
+	    border-radius: 5px;
+	    font-family: 'Open Sans', sans-serif;
+	    font-size: 14px;
+            
+        }
+
+	.section__content {
+	    background-color: rgba(255, 255, 255, 0.6);
+	    color: #000;
+	    border-radius: 0px;
+	    font-family: 'Open Sans', sans-serif;
+	    font-size: 17px;
+	    width: 100%;
+	    height: 100%;
+	    margin-top: calc(50px / 10vw);
+	    justify-content: center;
+	    align-items: center;
+	    position: absolute;
+	    padding: 0; 
+	    top: 0;
+	    left: 0;
+	    display: flex;
+	}
+
+	.content-wrapper {
+	    max-width: 75%; /* Adjust this value according to your preference */
+	    text-align: center;
+	}
+	
+	.objectives {
+	    font-size: 18px;
+	    font-weight: bold;
+	    list-style-position: inside;
+	}
+	
+	.socloclist {
+	    font-size: 18px;
+	    font-weight: bold;
+	    width: 70%;
+	}
+	
+	.title-menu {
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    z-index: 1;
+	    width: 100%;
+	    padding: 5px;
+	    border-radius: 5px;
+	    background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.0)), url('https://cdn.eso.org/images/publicationjpg/potw1631a.jpg');
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    max-height: 200px;
+	    overflow-y: auto;
+	}
+	
+
+        .title {
+	    font-size: calc(16px + 1.5vw);
+            margin-bottom: 3px;
+	    color: #ffff99;
+        }
+
+	.subtitle {
+	    font-size: 24px;
+	    margin-bottom: 10px;
+	    color: #ffff99;
+	}
+
+	.horizontal-line {
+	    border-top: 1px solid rgba(128, 128, 128, 0.5);
+	    width: 100%;
+	    margin: 10px 0;
+	}
+	
+        .menu {
+            display: flex;
+	    justify-content: flex-end;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+	    margin-right: 10%;
+        }
+
+        .menu-item {
+            margin-right: 10px;
+        }
+
+        .menu-link {
+	    font-size: 16px;
+	    color: #fff;
+	    text-decoration: none;
+	    font-family: sans-serif;
+        }
+
+        .menu-link:hover {
+            text-decoration: underline;
+        }
+
+        #rationale {
+            background-image: url('https://storage.googleapis.com/chile-travel-newsite-static-content/2021/07/puerto-varas_prin-min.jpg');
+        }
+
+        #speakers {
+            background-image: url('https://storage.googleapis.com/chile-travel-newsite-static-content/2021/07/puerto-varas_prin-min.jpg');
+        }
+
+        #program {
+            background-image: url('https://storage.googleapis.com/chile-travel-newsite-static-content/2021/07/puerto-varas_prin-min.jpg');
+        }
+
+        #socloc {
+            background-image: url('https://storage.googleapis.com/chile-travel-newsite-static-content/2021/07/puerto-varas_prin-min.jpg');
+        }
+
+        #registration {
+            background-image: url('https://storage.googleapis.com/chile-travel-newsite-static-content/2021/07/puerto-varas_prin-min.jpg');
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- Example of a section with title and menu -->
+        <section id="rationale" class="section">
+            <div class="title-menu">
+              <h1 class="title">Unveiling the dynamic universe: cosmic streams in the era of Rubin</h1>
+	      <p class="subtitle">Dec 11-15th, Puerto Varas, Chile</p>
+	      <div class="horizontal-line"></div>
+
+                <ul class="menu">
+                    <li class="menu-item"><a href="#rationale" class="menu-link">Scientific Rationale</a></li>
+                    <li class="menu-item"><a href="#socloc" class="menu-link">SOC & LOC</a></li>
+                    <li class="menu-item"><a href="#speakers" class="menu-link">Invited speakers</a></li>
+                    <li class="menu-item"><a href="#program" class="menu-link">Program</a></li>
+                    <li class="menu-item"><a href="#registration" class="menu-link">Registration</a></li>
+                </ul>
+            </div>
+            <div class="section__content">
+	      <div class="content-wrapper">
+		<h2 class="section__title">Scientific Rationale</h2>
+		<!-- Add your content here -->
+		<p class="section__description">
+		  The next generation of large etendue optical telescopes and multi-messenger observatories hold immense potential to revolutionize our understanding of the dynamic universe. The ability to detect transient and variable objects in real-time on a massive scale presents a unique opportunity to identify and study new populations of rare or short-lived events. Transient studies can lead to groundbreaking insights into the progenitors and explosion physics of stars, as well as a better understanding of the dynamics of the distant universe. Pulsating stars can be used to map the structure of the Milky Way at increasingly greater distances, shedding light on the physical mechanisms responsible for their pulsations as well. The monitoring and discovery of new populations of Active Galactic Nuclei, including those responsible for tidal disruption events, and of Young Stellar Objects, can offer valuable insights into the physics of accretion and mass assembly through variability. Lastly, by characterizing a larger number of Solar System objects, we can gain a deeper understanding of our own Solar System and its formation. The combination of these cutting-edge technologies has the potential to transform our understanding of the cosmos.
+		  <br><br>
+		  To unlock the potential of these discoveries, we will require not only new astronomical instrumentation and computational infrastructure, but also new tools from fields such as software engineering, databases, statistics, and machine learning. Community Brokers are leading the way in utilizing these tools to ingest, annotate, filter, and classify alert streams from various sources, including the Vera C. Rubin Observatory, the Zwicky Transient Facility, ATLAS, LIGO/Virgo/Kagra, and IceCube. Target and Observation Managers (TOMs) are similarly utilizing these tools to seamlessly connect survey and follow-up facilities. In addition, new follow-up facilities equipped with rapid reaction or multiplexed spectroscopic capabilities will aid in characterizing the most intriguing populations. With the time-domain astronomical ecosystem becoming increasingly complex and interconnected, it is crucial to connect emerging communities to further advance the field.
+		  
+		<p class="section__description objectives">
+		<h2 class="section__title">Main goals</h2>
+		  <ol>
+		    <ul class="objectives">
+		      <li>To explore how current and future surveys are pushing the boundaries of discovery.</li>
+		      <li>To discuss the most significant questions to be addressed through time-domain and multimessenger astrophysics.</li>
+		      <li>To facilitate connections between survey telescopes, brokers, TOMs, and follow-up facilities.</li>
+		      <li>To establish benchmarks, standards, and tutorials to aid the community in adopting new tools and services.</li>
+		    </ul>
+		  </ol>
+		</p>
+		</p>
+        </section>
+        <section id="socloc" class="section">
+          <div class="section__content">
+            <div>
+	      <h2>Scientific Organizing Committee&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h2>
+	      <ol>
+		<ul class="socloclist">
+		  <li> name 1
+		  <li> name 2
+		</ul>
+	      </ol>
+	    </div>
+	    <br>
+	    <div>
+              <h2>Local Organizing Committee</h2>
+	      <ol>
+		<ul class="socloclist">
+		  <li> name 1
+		  <li> name 2
+		</ul>
+	      </ol>
+	    </div>
+	  </div>
+            <!-- Add your content here -->
+        </section>
+        <section id="speakers" class="section">
+            <h2>Invited Speakers</h2>
+            <!-- Add your content here -->
+        </section>
+        <section id="program" class="section">
+            <h2>Program</h2>
+            <!-- Add your content here -->
+        </section>
+        <section id="loc" class="section">
+            <h2>Local Organizing Committee</h2>
+            <!-- Add your content here -->
+        </section>
+        <section id="registration" class="section">
+            <h2>Registration</h2>
+            <!-- Add your content here -->
+        </section>
+        <!-- Add other sections with similar structure -->
+    </main>
+</body>
+</html>
