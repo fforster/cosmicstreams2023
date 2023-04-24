@@ -7,6 +7,7 @@
             margin: 0;
             scroll-snap-type: y mandatory;
             overflow-y: scroll;
+	    padding-top: 100px;
         }
 
 	.section {
@@ -27,6 +28,9 @@
 	    border-radius: 5px;
 	    font-family: 'Open Sans', sans-serif;
 	    font-size: 14px;
+	    min-height: 100vh;
+	    padding-bottom: 200px;
+	    padding-top: 200px;
             
         }
 
@@ -37,13 +41,13 @@
 	    font-family: 'Open Sans', sans-serif;
 	    font-size: 17px;
 	    width: 100%;
-	    height: 100%;
+	    height: auto;
 	    margin-top: calc(50px / 10vw);
 	    justify-content: center;
 	    align-items: center;
-	    position: absolute;
+	    /*position: absolute;*/
 	    padding: 0; 
-	    top: 0;
+	    /*top: 200px; */
 	    left: 0;
 	    display: flex;
 	}
@@ -51,6 +55,8 @@
 	.content-wrapper {
 	    max-width: 75%; /* Adjust this value according to your preference */
 	    text-align: center;
+	    /*max-height: calc(100% - 200px);
+	    overflow-y: auto; */
 	}
 	
 	.objectives {
@@ -128,6 +134,10 @@
             background-image: url('https://storage.googleapis.com/chile-travel-newsite-static-content/2021/07/puerto-varas_prin-min.jpg');
         }
 
+        #socloc {
+            background-image: url('https://storage.googleapis.com/chile-travel-newsite-static-content/2021/07/puerto-varas_prin-min.jpg');
+        }
+
         #speakers {
             background-image: url('https://storage.googleapis.com/chile-travel-newsite-static-content/2021/07/puerto-varas_prin-min.jpg');
         }
@@ -136,13 +146,28 @@
             background-image: url('https://storage.googleapis.com/chile-travel-newsite-static-content/2021/07/puerto-varas_prin-min.jpg');
         }
 
-        #socloc {
-            background-image: url('https://storage.googleapis.com/chile-travel-newsite-static-content/2021/07/puerto-varas_prin-min.jpg');
-        }
-
         #registration {
             background-image: url('https://storage.googleapis.com/chile-travel-newsite-static-content/2021/07/puerto-varas_prin-min.jpg');
         }
+	
+	@media screen and (max-width: 768px) {
+	    body {
+		padding-top: 400px;
+		padding-bottom: 400px;
+	    }
+	}
+	@media screen and (max-width: 1024px) {
+	    body {
+		padding-top: 300px;
+		padding-bottom: 300px;
+	    }
+	}
+	@media screen and (max-width: 1400px) {
+	    body {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	    }
+	}
     </style>
 </head>
 <body>
@@ -216,11 +241,7 @@
             <h2>Program</h2>
             <!-- Add your content here -->
         </section>
-        <section id="loc" class="section">
-            <h2>Local Organizing Committee</h2>
-            <!-- Add your content here -->
-        </section>
-        <section id="registration" class="section">
+	<section id="registration" class="section">
             <h2>Registration</h2>
             <!-- Add your content here -->
         </section>
