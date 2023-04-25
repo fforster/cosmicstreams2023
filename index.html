@@ -7,7 +7,6 @@
             margin: 0;
             scroll-snap-type: y mandatory;
             overflow-y: scroll;
-	    padding-top: 100px;
         }
 
 	.section {
@@ -20,6 +19,8 @@
             justify-content: center;
             background-repeat: no-repeat;
             background-size: cover;
+	    background-position: center center;
+	    background-attachment: fixed; 
             color: #fff;
 	    font-family: 'Open Sans', sans-serif;
 	    font-size: 14px;
@@ -29,8 +30,8 @@
 	    font-family: 'Open Sans', sans-serif;
 	    font-size: 14px;
 	    min-height: 100vh;
-	    padding-bottom: 200px;
-	    padding-top: 200px;
+	    padding-bottom: calc(100vh - 40vw);
+	    padding-top: calc(100vh - 40vw);
             
         }
 
@@ -45,7 +46,7 @@
 	    margin-top: calc(50px / 10vw);
 	    justify-content: center;
 	    align-items: center;
-	    /*position: absolute;*/
+	    position: absolute;
 	    padding: 0; 
 	    /*top: 200px; */
 	    left: 0;
@@ -158,25 +159,33 @@
         }
 
 
-	
+	/*
+	@media screen and (max-width: 500px) {
+	    section {
+		padding-top: 600px;
+		padding-bottom: 900px;
+	    }
+	}
+
 	@media screen and (max-width: 768px) {
-	    body {
+	    section {
+		padding-top: 1000px;
+		padding-bottom: 1000px;
+	    }
+	}
+	@media screen and (max-width: 1024px) {
+	    section {
 		padding-top: 400px;
 		padding-bottom: 400px;
 	    }
 	}
-	@media screen and (max-width: 1024px) {
-	    body {
-		padding-top: 300px;
-		padding-bottom: 300px;
-	    }
-	}
 	@media screen and (max-width: 1400px) {
-	    body {
+	    section {
 		padding-top: 100px;
 		padding-bottom: 100px;
 	    }
 	}
+       */
     </style>
 </head>
 <body>
@@ -186,7 +195,6 @@
             <div class="title-menu">
               <h1 class="title">Unveiling the dynamic universe: cosmic streams in the era of Rubin</h1>
 	      <p class="subtitle">11-15th December 2023, Puerto Varas, Chile</p>
-	      <div class="horizontal-line"></div>
 
                 <ul class="menu">
                     <li class="menu-item"><a href="#rationale" class="menu-link">Scientific Rationale</a></li>
